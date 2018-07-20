@@ -17,6 +17,48 @@
 
 <resources>
 
+    <!-- Base application theme, everyTheme must Implement this one. -->
+    <style name="ParentTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">?themeColorPrimary</item>
+        <item name="colorPrimaryDark">?themeColorPrimaryDark</item>
+        <item name="colorAccent">?themeColorAccent</item>
+        <item name="actionBarDivider">?themeColorBackground</item>
+        <item name="android:colorBackground">?themeColorBackground</item>
+        <item name="android:state_selected">?themeColorItemSelected</item>
+        <item name="android:textColorPrimary">?themeTextColorPrimary</item>
+        <item name="android:editTextColor">?themeColorPrimary</item>
+        <item name="android:itemBackground">?themeItemBackground</item>
+        <item name="android:textColor">?themeTextColor</item>
+    </style>
+
+    <style name="ParentTheme.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="BlackTheme" parent="ParentTheme">
+        <item name="themeColorPrimary">@color/material_color_black</item>
+        <item name="themeColorPrimaryDark">@color/material_color_black</item>
+        <item name="themeColorAccent">@color/material_color_blue_accent</item>
+        <item name="themeColorBackground">@color/material_color_black</item>
+        <item name="themeColorItemSelected">@color/material_color_white</item>
+        <item name="themeTextColorPrimary">@color/material_color_white</item>
+        <item name="themeColorItemNotSelected">@color/material_color_white_50_percent</item>
+        <item name="themeDialogTextColor">@color/material_color_black</item>
+        <item name="android:itemBackground">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="CardViewStyle">
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="android:layout_marginLeft">@dimen/material_card_edge_margin</item>
+        <item name="android:layout_marginRight">@dimen/material_card_edge_margin</item>
+        <item name="android:layout_marginTop">@dimen/material_card_edge_margin</item>
+        <item name="android:layout_marginBottom">@dimen/material_card_edge_margin</item>
+        <item name="cardCornerRadius">@dimen/material_card_corner_radius</item>
+        <item name="cardElevation">@dimen/cardview_default_elevation</item>
+    </style>
+
     <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
 
     </style>
@@ -24,5 +66,4 @@
     <style name="Theme.Bacon.Detail">
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
-
 </resources>
