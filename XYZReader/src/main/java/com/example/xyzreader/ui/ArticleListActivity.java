@@ -70,6 +70,7 @@ public class ArticleListActivity extends AppCompatActivity implements
         if (savedInstanceState == null) {
             refresh();
         }
+        setSupportActionBar(mToolbar);
     }
 
     private void refresh() {

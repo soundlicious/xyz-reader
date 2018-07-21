@@ -109,7 +109,7 @@
             android:layout_marginBottom="@dimen/fab_margin"
             android:layout_marginEnd="@dimen/fab_margin"
             android:clickable="true"
-            android:elevation="@dimen/fab_elevation"
+            android:elevation="@dimen/material_elevation_fab_resting"
             android:focusable="true"
             app:layout_anchor="@id/scrollview"
             app:layout_anchorGravity="bottom|right|end"

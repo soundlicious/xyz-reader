@@ -169,6 +169,7 @@ public class ArticleDetailFragment extends Fragment implements
 
         Toolbar toolbar = mRootView.findViewById(R.id.toolbar);
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
+        getActivityCast().setSupportActionBar(toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
